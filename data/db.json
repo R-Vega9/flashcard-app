@@ -1,0 +1,92 @@
+{
+  "decks": [
+    {
+      "name": "Sample 12",
+      "description": "This is Sample 12",
+      "id": 1
+    },
+    {
+      "name": "Sample 3",
+      "description": "Sample 3 Description ",
+      "id": 3
+    }
+  ],
+  "cards": [
+    {
+      "deckId": null,
+      "id": 1
+    },
+    {
+      "deckId": null,
+      "id": 2
+    },
+    {
+      "deckId": null,
+      "id": 3
+    },
+    {
+      "deckId": 1,
+      "id": 4
+    },
+    {
+      "front": "Sample Card 6",
+      "back": "Back of Sample Card 6",
+      "deckId": 1,
+      "id": 6
+    },
+    {
+      "front": "This is card 1",
+      "back": "Back of card 1",
+      "deckId": 2,
+      "id": 7
+    },
+    {
+      "front": "",
+      "back": "",
+      "deckId": 2,
+      "id": 8
+    },
+    {
+      "front": "",
+      "back": "",
+      "deckId": 2,
+      "id": 9
+    },
+    {
+      "front": "eryrey",
+      "back": "ryrey",
+      "deckId": 2,
+      "id": 10
+    },
+    {
+      "id": 11,
+      "front": "Front of Card",
+      "back": "Back of Card",
+      "deckId": 3
+    },
+    {
+      "id": 12,
+      "front": "Front1",
+      "back": "Back1",
+      "deckId": 3
+    },
+    {
+      "front": "Front 3",
+      "back": "Back 3",
+      "deckId": 1,
+      "id": 13
+    },
+    {
+      "front": "Front 4",
+      "back": "Back 4",
+      "deckId": 1,
+      "id": 14
+    },
+    {
+      "front": "",
+      "back": "",
+      "deckId": 3,
+      "id": 15
+    }
+  ]
+}

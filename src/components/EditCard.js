@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useHistory, useParams } from "react-router-dom";
 import { readCard, readDeck, updateCard } from "../utils/api/index";
+import FormComponent from "./FormComponent";
 
 function EditCard() {
   const { deckId, cardId } = useParams();
@@ -74,33 +75,13 @@ async function handleSubmit(event) {
         </li>
         <li className="breadcrumb-item active">Edit Card {cardId}</li>
       </ol>
-      <form onSubmit={handleSubmit}>
-        <h2>Edit Card</h2>
-        <div>
-          <label>Front</label>
-          <textarea
-            id="front"
-            name="front"
-            className="form-control"
-            onChange={handleChange}
-            type="text"
-            value={card.front}
-          />
-        </div>
-        <div>
-          <label>Back</label>
-          <textarea
-            id="back"
-            name="back"
-            className="form-control"
-            onChange={handleChange}
-            type="text"
-            value={card.back}
-          />
-        </div>
-        <button onClick={handleCancel} className="btn btn-secondary mx-1">Cancel</button>
-        <button type="submit" className="btn btn-primary mx-1">Submit</button>
-      </form>
+      <FormComponent
+        front ={card.front}
+        back={card.back}
+        handleChange={handleChange}
+        handleSubmit={handleSubmit}
+        handleCancel={handleCancel}
+      />
     </div>
   );
 }
